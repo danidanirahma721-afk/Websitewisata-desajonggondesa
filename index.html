@@ -294,13 +294,38 @@ Dari Gua eksotis, Air terjun yang menenangkan, hingga Keham huluan yang memanjak
 
 
     <section class="hero">
-
-
-
-
-
-
 </footer>
+
+            <audio autoplay loop>
+    <source src="Audio/videoplayback.weba.crdownload" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+</audio>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="Audio/videoplayback.weba.crdownload" type="audio/mpeg">
+</audio>
+
+<button id="playMusic" class="music-btn">
+    🎵 Putar Musik
+</button>
+
+<script>
+document.getElementById("playMusic").addEventListener("click", function() {
+    document.getElementById("bgMusic").play();
+    this.style.display = "none";
+});
+</script>
+
+<audio id="bgMusic" loop>
+    <source src="audio/backsound.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function() {
+    document.getElementById("bgMusic").play();
+}, { once: true });
+</script>
 
         </div>
 
